@@ -1,0 +1,103 @@
+:root{
+    --clr-primary-green:hsl(75, 94%, 57%);
+    --clr-neutral-grey:hsl(0, 0%, 20%);
+    --clr-neutral-dark-grey:hsl(0, 0%, 12%);
+    --clr-neutral-off-black:hsl(0, 0%, 8%);
+    --clr-neutral-white:hsl(0, 0%, 100%);
+
+    --ff: 'Inter', sans-serif;
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fs-body: .875rem;
+    --fs-heading:1.375rem;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+h1 {
+    line-height: 1.1;
+}
+ul li {
+    list-style: none;
+}
+img {
+    display:block;
+    max-width:100%;
+    color:var(--clr-primary-green);
+    font-style:italic;
+    margin-inline: auto;
+}
+a {
+    color: var(--clr-neutral-white);
+    text-decoration:none;
+
+}
+body{
+    text-align: center;
+    font-family:var(--ff);
+    font-weight:var(--fw-400);
+    font-size: var(--fs-body);
+    color:var(--clr-neutral-white);
+    background: var(--clr-neutral-off-black);
+}
+
+.user-name {
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-600);
+    margin-bottom:.5rem;
+
+}
+
+.user-location {
+    color:var(--clr-primary-green);
+    font-weight: var(--fw-600);
+    margin-bottom: 1.25rem;
+}
+.list-item {
+    display: block;
+    width:100%;
+    padding:0.7rem;
+    background: var(--clr-neutral-grey);
+    border-radius:.3rem;
+    text-align:center;
+}
+.list-item:hover{
+    color: var(--clr-neutral-off-black);
+    background: var(--clr-primary-green);
+    transition: background .3s ease, color .3s ease
+}
+.wrapper{
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+}
+    
+
+.profile-container {
+    width:25em;
+    padding: 1.75rem;
+    background: var(--clr-neutral-dark-grey);
+    border-radius:.6rem;
+}
+.social-links{
+    margin-top: 1.5rem;
+}
+.social-links * + * {
+    margin-top:.75rem;
+}
+.profile-pic {
+    width:7em;
+    border-radius:50%;
+    margin-bottom: 1.5rem;
+}
+@media (max-width:375){
+    .profile-container{
+        margin-inline:2rem;
+        border-radius: 0;
+        padding:1rem;
+    }
+
+}
